@@ -1,0 +1,113 @@
+option{
+    color:black;
+}
+
+.form__containers{
+    margin-top: 3rem;
+}
+
+.form{
+    position: relative;
+    margin: 0.5rem 0px;
+    width: 24rem;
+    height: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.form__input{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(252, 252, 252, 0.877);
+    border-radius: 0.2rem;
+    font-size: 16px;
+    color: rgb(243, 243, 243);
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+}
+
+.form__input:hover{
+    border-color: rgb(245, 224, 41);
+}
+
+.form__input:focus{
+    border-color: rgb(250, 106, 23);
+}
+
+.form__label{
+    position:absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: white;
+    cursor: text;
+    transition: left 200ms ease-in;
+}
+
+.textarea-label{
+    color:white;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label{
+    left: -5.4rem;
+}
+
+.form__submit{
+    margin-top: 40px;
+    top:2rem;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(252, 252, 252, 0.877);
+    border-radius: 0.2rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.form__submit:hover{
+    box-shadow: 0px 0px 10px white;
+    cursor:pointer;
+}
+
+.form__submit:active{
+    color:white;
+    background: none;
+}
+
+.form__select{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(252, 252, 252, 0.877);
+    border-radius: 0.2rem;
+    font-size: 16px;
+    color: rgb(247, 247, 247);
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.7rem 0.8rem;
+}
+
+@media screen and (max-width: 820px){
+    .form{
+        width: 15rem;
+    }   
+    .form__submit{
+        margin-top: 500px;
+    } 
+    .form__textarea{
+        margin-top: 5px;
+        width: 18em;
+        height: 3em;
+    }
+}
